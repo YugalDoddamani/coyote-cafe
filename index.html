@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coyote Café | Breakfast &amp; Lunch in California City, CA</title>
+<meta name="description" content="Family-recipe breakfast and lunch in California City. Biscuits &amp; gravy, country fried steak, and grandma's secret salsa. Open daily from 7 AM.">
+<meta name="theme-color" content="#F5EBDD">
+<meta name="robots" content="index,follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Coyote Café | Where the desert stops for breakfast.">
+<meta property="og:description" content="Family-recipe comfort food in California City. Made from scratch since 2008.">
+<meta property="og:url" content="https://coyotecafecalcity.com/">
+<meta property="og:image" content="https://coyotecafecalcity.com/img/og.jpg">
+<meta property="og:locale" content="en_US">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23E8933C'/%3E%3Cpath fill='%233B2E2A' d='M 50 26 L 86 6 L 94 54 Q 90 72 68 80 L 50 94 L 32 80 Q 10 72 6 54 L 14 6 Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- =========================================================================
+     BOOT CLASS — must run before any paint, before the stylesheet.
+     Sets html.js always. Sets html.is-loading only if the curtain should
+     play this session. If this script never runs (JS disabled), the page
+     renders normally with no curtain, no scroll lock, all content visible.
+     ========================================================================= -->
+<script>
+(function () {
+  var h = document.documentElement;
+  h.classList.add('js');
+  try {
+    if (!sessionStorage.getItem('cc-curtain')) {
+      h.classList.add('is-loading');
+      sessionStorage.setItem('cc-curtain', '1');
+    }
+  } catch (e) {
+    h.classList.add('is-loading');
+  }
+})();
+</script>
+
+<style>
+/* ==========================================================================
+   TYPE ROLES — enforced, not observed
+   --------------------------------------------------------------------------
+   Alfa Slab One = SIGNAGE. h1, h2, brand wordmark, timeline years, rating
+   numbers, featured review quote, the OPEN sign state word, curtain title.
+   Nunito Sans = DOCUMENTATION. Everything else, including menu item names
+   at 800 weight.
+   ========================================================================== */
+
+:root{
+  --desert-sand:#F5EBDD;
+  --cream:#FDFAF5;
+  --terracotta:#C4623A;
+  --terracotta-deep:#A84E2B;
+  --sunrise-orange:#E8933C;
+  --sagebrush:#7A8B6F;
+  --sage-deep:#4E5C46;
+  --espresso:#3B2E2A;
+  --charcoal:#1F1B18;
+
+  --font-display:"Alfa Slab One", Georgia, serif;
+  --font-body:"Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --r-sm:8px; --r-lg:16px; --r-pill:999px;
+  --maxw:1120px;
+  --pad:clamp(1.25rem, 4vw, 2rem);
+  --shadow-soft:0 2px 4px rgba(59,46,42,.05), 0 12px 32px -12px rgba(59,46,42,.18);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+html.is-loading,
+html.is-loading body{overflow:hidden}
+
+body{
+  margin:0;
+  background:var(--desert-sand);
+  color:var(--espresso);
+  font-family:var(--font-body);
+  font-size:clamp(1rem,.96rem + .2vw,1.0625rem);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+@media (max-width:768px){ body{padding-bottom:calc(72px + env(safe-area-inset-bottom))} }
+
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.08;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(2.25rem,1.4rem + 4.2vw,4rem)}
+h2{font-size:clamp(1.75rem,1.2rem + 2.4vw,2.75rem)}
+h3{font-size:clamp(1.05rem,.98rem + .4vw,1.25rem);line-height:1.25}
+p{margin:0 0 1rem}
+p:last-child{margin-bottom:0}
+img{max-width:100%;display:block}
+
+a{color:var(--terracotta-deep);text-underline-offset:3px}
+a:hover{color:var(--espresso)}
+
+:focus-visible{outline:3px solid var(--terracotta-deep);outline-offset:3px;border-radius:4px}
+
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+.section{padding-block:clamp(3.5rem,8vw,6rem)}
+.section-head{max-width:56ch}
+.section-intro{margin-top:1rem;color:#5C4A43}
+.skip{position:absolute;left:-9999px;top:0;background:var(--espresso);color:var(--cream);padding:.75rem 1rem;z-index:10000;border-radius:0 0 var(--r-sm) 0}
+.skip:focus{left:0}
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:48px;padding:.75rem 1.4rem;
+  font-family:var(--font-body);font-weight:700;font-size:1rem;line-height:1;
+  border-radius:var(--r-pill);border:2px solid transparent;
+  text-decoration:none;cursor:pointer;
+  transition:transform .15s ease, background-color .15s ease, color .15s ease, border-color .15s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn--primary{background:var(--terracotta-deep);color:var(--cream)}
+.btn--primary:hover{background:#8F4123;color:var(--cream)}
+.btn--ghost{background:transparent;color:var(--espresso);border-color:rgba(59,46,42,.28)}
+.btn--ghost:hover{background:rgba(59,46,42,.06);color:var(--espresso);border-color:rgba(59,46,42,.5)}
+.btn--onDark{background:var(--cream);color:var(--terracotta-deep)}
+.btn--onDark:hover{background:#fff;color:#8F4123}
+.btn--outlineLight{background:transparent;color:var(--cream);border-color:rgba(253,250,245,.55)}
+.btn--outlineLight:hover{background:rgba(253,250,245,.14);color:var(--cream)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* ---------- Header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:var(--desert-sand);
+  border-bottom:1px solid rgba(59,46,42,.12);
+}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:68px}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--espresso)}
+.brand__mark{width:40px;height:40px;flex:none}
+.brand__text{display:flex;flex-direction:column;line-height:1}
+.brand__name{font-family:var(--font-display);font-size:1.05rem;letter-spacing:.01em}
+.brand__sub{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-deep);font-weight:700;margin-top:3px}
+.nav{display:none;gap:1.75rem;align-items:center}
+.nav a{font-weight:600;font-size:.95rem;text-decoration:none;color:var(--espresso)}
+.nav a:hover{color:var(--terracotta-deep)}
+.header-cta{display:none}
+@media (min-width:900px){
+  .nav{display:flex}
+  .header-cta{display:inline-flex}
+}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--desert-sand)}
+.hero__inner{display:grid;gap:1.75rem;padding-block:clamp(2.5rem,7vw,5rem)}
+.hero__media .ph{height:clamp(280px,55vw,400px)}
+@media (min-width:1024px){
+  .hero__inner{grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+  .hero__media .ph{height:clamp(420px,52vw,560px)}
+}
+.hero h1{margin-bottom:1rem;max-width:16ch}
+.hero__sub{font-size:clamp(1.05rem,1rem + .5vw,1.25rem);max-width:44ch;color:#4A3A34}
+.hero__actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.hero__trust{margin-top:1.75rem;font-size:.9rem;font-weight:700;color:var(--sage-deep)}
+
+/* ---------- SIGNATURE MOVE — the hanging OPEN sign ---------- */
+.sign{
+  display:inline-block;
+  margin-bottom:1.5rem;
+  transform:rotate(-1.1deg);
+  transform-origin:center center;
+}
+.sign__panel{
+  position:relative;
+  background:var(--cream);
+  border:2px solid var(--espresso);
+  border-radius:10px;
+  padding:.9rem 1.2rem .95rem;
+  min-width:14.5rem;
+  box-shadow:0 12px 28px -14px rgba(59,46,42,.42), 0 2px 4px rgba(59,46,42,.08);
+}
+.sign__panel::before,
+.sign__panel::after{
+  content:"";position:absolute;top:7px;
+  width:6px;height:6px;border-radius:50%;
+  background:rgba(59,46,42,.32);
+}
+.sign__panel::before{left:9px}
+.sign__panel::after{right:9px}
+
+.sign__state{
+  display:flex;align-items:center;gap:.55rem;
+  font-family:var(--font-display);
+  font-size:clamp(1.35rem,1.1rem + 1.4vw,1.75rem);
+  line-height:1;letter-spacing:-.01em;
+  margin:0;color:var(--espresso);
+}
+.sign__dot{
+  width:11px;height:11px;border-radius:50%;flex:none;
+  background:var(--sagebrush);
+}
+.sign[data-state="open"] .sign__dot{background:var(--sage-deep)}
+.sign[data-state="closed"] .sign__dot{background:var(--terracotta-deep)}
+@media (prefers-reduced-motion:no-preference){
+  .sign[data-state="open"] .sign__dot{animation:pulse 2.4s ease-in-out infinite}
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+.sign__meta{
+  font-family:var(--font-body);
+  font-size:.82rem;font-weight:700;
+  color:var(--sage-deep);
+  margin:.35rem 0 0;
+  font-variant-numeric:tabular-nums;
+}
+
+/* ---------- Photo placeholder panels ---------- */
+.ph{
+  position:relative;overflow:hidden;border-radius:var(--r-lg);
+  background:linear-gradient(165deg,var(--cream) 0%,#F0E2CE 100%);
+  border:1px solid rgba(59,46,42,.1);
+  display:flex;align-items:center;justify-content:center;
+  min-height:220px;
+}
+.ph__icon{width:24%;max-width:130px;height:auto;opacity:.22;color:var(--espresso)}
+.ph__chip{
+  position:absolute;top:.6rem;left:.6rem;
+  font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  background:rgba(31,27,24,.72);color:var(--cream);
+  padding:.28rem .55rem;border-radius:var(--r-sm);
+  max-width:calc(100% - 1.2rem);line-height:1.3;
+}
+.ph--sunrise{background:linear-gradient(180deg,#FBE3C0 0%,var(--sunrise-orange) 42%,#D9793E 68%,#B85B33 100%);border-color:transparent}
+.ph--sunrise .ph__icon{opacity:.9;color:var(--espresso);width:38%;max-width:210px}
+
+/* ---------- Horizon divider ---------- */
+.horizon{line-height:0;background:var(--cream);color:var(--desert-sand)}
+.horizon svg{width:100%;height:clamp(18px,2.4vw,30px);display:block}
+
+/* ---------- Story ---------- */
+.story{background:var(--cream)}
+.story__grid{display:grid;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+@media (min-width:900px){.story__grid{grid-template-columns:.85fr 1fr}}
+.story__portrait .ph{height:clamp(300px,44vw,440px)}
+.story__copy p:first-of-type{margin-top:1.25rem}
+.timeline{list-style:none;margin:1.75rem 0 0;padding:0;display:grid;gap:.85rem}
+.timeline li{display:flex;gap:.9rem;align-items:baseline}
+.timeline .yr{font-family:var(--font-display);font-size:1rem;color:var(--terracotta-deep);flex:none;min-width:3.6rem}
+.timeline .txt{font-size:.95rem}
+
+/* ---------- Menu ---------- */
+.menu-list{list-style:none;margin:2.25rem 0 0;padding:0;display:grid;gap:0}
+.menu-item{
+  display:grid;grid-template-columns:1fr auto;gap:.35rem 1rem;
+  padding:1.1rem 0;border-bottom:1px solid rgba(59,46,42,.13);
+}
+.menu-item:first-child{border-top:1px solid rgba(59,46,42,.13)}
+.menu-item__name{font-family:var(--font-body);font-weight:800;letter-spacing:-.01em;font-size:1.05rem;line-height:1.2}
+.menu-item__desc{grid-column:1/-1;font-size:.92rem;color:#5C4A43;margin:0}
+.menu-item__price{font-weight:700;white-space:nowrap;color:var(--terracotta-deep)}
+.menu-item--star{position:relative}
+.menu-item--star::before{
+  content:"Most talked about";position:absolute;top:-.6rem;right:0;
+  font-size:.6rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  background:var(--sunrise-orange);color:#4A2A10;
+  padding:.2rem .5rem;border-radius:var(--r-pill);
+}
+.menu__footer{margin-top:2rem}
+.menu__note{font-size:.95rem;color:var(--sage-deep);font-weight:600}
+
+/* ---------- Reviews ---------- */
+.reviews{background:var(--desert-sand)}
+.reviews__head{text-align:center;max-width:52ch;margin-inline:auto;margin-bottom:2.5rem}
+.review-grid{display:grid;gap:1.25rem}
+@media (min-width:700px){.review-grid{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){.review-grid{grid-template-columns:repeat(3,1fr)}}
+.review{
+  background:var(--cream);border-radius:var(--r-lg);padding:1.5rem 1.5rem 1.25rem;
+  border:1px solid rgba(59,46,42,.09);box-shadow:var(--shadow-soft);
+  display:flex;flex-direction:column;gap:.85rem;
+}
+.review--featured{grid-column:1/-1;background:var(--espresso);border-color:transparent;color:var(--cream)}
+.review--featured .review__quote{font-family:var(--font-display);font-weight:400;font-size:clamp(1.4rem,2.6vw,1.8rem);line-height:1.3;max-width:30ch}
+.review--featured .review__stars{color:var(--sunrise-orange)}
+.review--featured .review__attr{color:rgba(253,250,245,.72)}
+.review__stars{color:var(--terracotta-deep);letter-spacing:2px;font-size:.95rem}
+.review__quote{font-size:1.08rem;line-height:1.5;font-weight:600;margin:0}
+.review__quote::before{content:"“"}
+.review__quote::after{content:"”"}
+.review__attr{font-size:.83rem;color:var(--sage-deep);font-weight:700;margin-top:auto}
+.rating-summary{
+  display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:center;
+  margin-top:2.25rem;padding-top:2rem;border-top:1px solid rgba(59,46,42,.14);
+}
+.rating{text-align:center}
+.rating__num{font-family:var(--font-display);font-size:1.6rem;display:block;line-height:1}
+.rating__label{font-size:.82rem;color:var(--sage-deep);font-weight:700}
+
+/* ---------- Hours & Location ---------- */
+.hours{background:var(--cream)}
+.hours__grid{display:grid;gap:clamp(2rem,5vw,3rem)}
+@media (min-width:900px){.hours__grid{grid-template-columns:1fr 1.1fr}}
+.hours-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:1.05rem}
+.hours-table th,.hours-table td{text-align:left;padding:.7rem .5rem;border-bottom:1px solid rgba(59,46,42,.12)}
+.hours-table th{font-weight:700;width:45%}
+.hours-table td{font-variant-numeric:tabular-nums}
+.hours-table tr[data-today] th,.hours-table tr[data-today] td{background:rgba(232,147,60,.13);font-weight:700}
+.hours-table tr[data-today] th::after{
+  content:"Today";margin-left:.5rem;font-size:.6rem;letter-spacing:.07em;text-transform:uppercase;
+  background:var(--terracotta-deep);color:var(--cream);padding:.15rem .4rem;border-radius:var(--r-pill);vertical-align:middle;
+}
+.hours-table tr:last-child th,.hours-table tr:last-child td{border-bottom:none}
+.contact-list{list-style:none;margin:1.25rem 0 0;padding:0;display:grid;gap:.7rem;font-size:.98rem}
+.contact-list li{display:flex;gap:.65rem;align-items:flex-start}
+.contact-list svg{width:19px;height:19px;flex:none;margin-top:.25rem;color:var(--sage-deep)}
+.map-embed{
+  border-radius:var(--r-lg);overflow:hidden;border:1px solid rgba(59,46,42,.12);
+  box-shadow:var(--shadow-soft);background:var(--desert-sand);
+}
+.map-embed iframe{width:100%;height:clamp(260px,40vw,360px);border:0;display:block}
+.hours__actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+
+/* ---------- CTA band ---------- */
+.cta-band{background:var(--terracotta-deep);color:var(--cream)}
+.cta-band .wrap{
+  padding-block:clamp(2.75rem,6vw,4rem);
+  display:grid;gap:1.5rem;align-items:center;text-align:center;
+}
+@media (min-width:820px){.cta-band .wrap{grid-template-columns:1fr auto;text-align:left}}
+.cta-band h2{color:var(--cream)}
+.cta-band p{color:rgba(253,250,245,.9);margin-top:.5rem}
+.cta-band__actions{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--charcoal);color:rgba(253,250,245,.78);font-size:.9rem}
+.site-footer a{color:rgba(253,250,245,.9)}
+.site-footer a:hover{color:#fff}
+.footer__grid{display:grid;gap:2rem;padding-block:clamp(2.5rem,6vw,3.5rem)}
+@media (min-width:760px){.footer__grid{grid-template-columns:1.2fr 1fr 1fr}}
+.footer__brand{display:flex;align-items:center;gap:.75rem;margin-bottom:.9rem}
+.footer__brand svg{width:44px;height:44px}
+.footer__brand .name{font-family:var(--font-display);font-size:1.15rem;color:var(--cream);line-height:1.1}
+.footer h3{color:var(--cream);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-family:var(--font-body);font-weight:700;margin-bottom:.9rem}
+.footer address{font-style:normal;line-height:1.8}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.55rem}
+.footer__bottom{
+  border-top:1px solid rgba(253,250,245,.14);
+  padding-block:1.25rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;
+  justify-content:space-between;font-size:.8rem;color:rgba(253,250,245,.6);
+}
+
+/* ---------- Sticky mobile action bar ---------- */
+.action-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:120;
+  display:grid;grid-template-columns:1fr 1fr;gap:.6rem;
+  padding:.6rem .75rem calc(.6rem + env(safe-area-inset-bottom));
+  background:var(--cream);
+  border-top:1px solid rgba(59,46,42,.14);
+  transform:translateY(110%);
+  transition:transform .28s cubic-bezier(.2,.7,.3,1);
+}
+.action-bar[data-visible="true"]{transform:translateY(0)}
+.action-bar .btn{width:100%;min-height:50px;padding-inline:.75rem;font-size:.95rem}
+@media (min-width:769px){.action-bar{display:none}}
+@media (prefers-reduced-motion:reduce){.action-bar{transition:none}}
+
+/* ==========================================================================
+   THE CURTAIN — "Desert sunrise"
+   --------------------------------------------------------------------------
+   Five bands, unequal heights. Band 3 is tallest so the name group sits
+   inside one color — cream on terracotta-deep measures 5.26:1, passes AA
+   at every size, no backdrop panel needed.
+
+     0–19vh   espresso          exits up
+    19–37vh   terracotta        exits up
+    37–63vh   terracotta-deep   scales + fades
+    63–81vh   sunrise-orange    exits down
+    81–100vh  desert-sand       exits down
+
+   Visible only while html.is-loading. No JS = no is-loading = no curtain.
+   ========================================================================== */
+#curtain{
+  position:fixed;inset:0;z-index:9999;
+  display:none;overflow:hidden;
+  pointer-events:auto;
+}
+html.is-loading #curtain{display:block}
+#curtain.curtain--gone{display:none !important}
+
+.curtain__band{
+  position:absolute;left:0;right:0;
+  backface-visibility:hidden;
+  will-change:transform,opacity;
+}
+.curtain__band--1{top:0;height:19vh;background:var(--espresso)}
+.curtain__band--2{top:19vh;height:18vh;background:var(--terracotta)}
+.curtain__band--3{
+  top:37vh;height:26vh;background:var(--terracotta-deep);
+  display:flex;align-items:center;justify-content:center;
+}
+.curtain__band--4{top:63vh;height:18vh;background:var(--sunrise-orange)}
+.curtain__band--5{top:81vh;bottom:0;background:var(--desert-sand)}
+
+.curtain__name{
+  display:flex;flex-direction:column;align-items:center;
+  gap:.9rem;text-align:center;
+  padding:0 1.25rem;
+  opacity:0;
+}
+.curtain__mark{width:56px;height:56px;display:block;flex:none}
+.curtain__title{
+  font-family:var(--font-display);
+  font-size:clamp(2rem,6vw,3.5rem);
+  line-height:1;letter-spacing:-.01em;
+  color:var(--cream);
+}
+.curtain__sub{
+  font-family:var(--font-body);font-weight:700;
+  font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(253,250,245,.85);
+}
+
+/* Name in — t=100ms */
+html.is-loading .curtain__name{
+  animation:curtainNameIn 500ms cubic-bezier(.16,.84,.44,1) 100ms forwards;
+}
+@keyframes curtainNameIn{
+  0%{opacity:0;transform:translateY(14px)}
+  100%{opacity:1;transform:translateY(0)}
+}
+
+/* Name out — t=820ms */
+html.is-loading #curtain.curtain--name-out .curtain__name{
+  animation:curtainNameOut 280ms cubic-bezier(.4,0,.7,.2) forwards;
+}
+@keyframes curtainNameOut{
+  0%{opacity:1;transform:translateY(0)}
+  100%{opacity:0;transform:translateY(-8px)}
+}
+
+/* Band 3 exit — t=1000ms */
+html.is-loading #curtain.curtain--band-3-out .curtain__band--3{
+  animation:curtainBand3Out 600ms cubic-bezier(.76,0,.24,1) forwards;
+}
+@keyframes curtainBand3Out{
+  0%{opacity:1;transform:scale(1)}
+  100%{opacity:0;transform:scale(1.06)}
+}
+
+/* Bands 2 + 4 — t=1060ms */
+html.is-loading #curtain.curtain--outer-a-out .curtain__band--2{
+  animation:curtainUpOut 650ms cubic-bezier(.76,0,.24,1) forwards;
+}
+html.is-loading #curtain.curtain--outer-a-out .curtain__band--4{
+  animation:curtainDownOut 650ms cubic-bezier(.76,0,.24,1) forwards;
+}
+
+/* Bands 1 + 5 — t=1120ms */
+html.is-loading #curtain.curtain--outer-b-out .curtain__band--1{
+  animation:curtainUpOut 650ms cubic-bezier(.76,0,.24,1) forwards;
+}
+html.is-loading #curtain.curtain--outer-b-out .curtain__band--5{
+  animation:curtainDownOut 650ms cubic-bezier(.76,0,.24,1) forwards;
+}
+
+@keyframes curtainUpOut{
+  0%{transform:translate3d(0,0,0)}
+  100%{transform:translate3d(0,-100vh,0)}
+}
+@keyframes curtainDownOut{
+  0%{transform:translate3d(0,0,0)}
+  100%{transform:translate3d(0,100vh,0)}
+}
+
+/* Curtain — reduced motion: name shown statically, whole overlay crossfades */
+@media (prefers-reduced-motion:reduce){
+  html.is-loading .curtain__name{
+    animation:none;
+    opacity:1;
+    transform:none;
+  }
+  .curtain__band{will-change:auto}
+  html.is-loading #curtain.curtain--reduced{
+    animation:curtainFade 200ms linear forwards;
+  }
+  @keyframes curtainFade{
+    0%{opacity:1}
+    100%{opacity:0}
+  }
+}
+
+/* ==========================================================================
+   REVEAL
+   --------------------------------------------------------------------------
+   Every heading and body block enters with slide-up + fade. Hero comes first
+   (sign → h1 → sub → actions → trust, 100ms stagger). Below-fold groups
+   reveal on first intersection. Never re-triggers on scroll-back.
+
+   Hidden state is gated on html.js — no-JS users see everything from first
+   paint. Reduced-motion users skip the reveal entirely (instant is-in).
+   ========================================================================== */
+html.js [data-reveal]{
+  opacity:0;
+  transform:translateY(24px);
+  transition:
+    opacity 600ms cubic-bezier(.22,1,.36,1),
+    transform 600ms cubic-bezier(.22,1,.36,1);
+}
+html.js [data-reveal].is-in{
+  opacity:1;
+  transform:none;
+}
+
+/* Hero title — heavier, slower */
+html.js [data-reveal="h1"]{
+  transform:translateY(32px);
+  transition-duration:800ms;
+}
+
+/* Hero media — heavier still, its own easing */
+html.js [data-reveal="media"]{
+  transform:translateY(40px);
+  transition-duration:700ms;
+  transition-timing-function:cubic-bezier(.16,.84,.44,1);
+}
+
+/* The sign must keep its tilt through both states.
+   Placed after the general rules so it wins specificity ties. */
+html.js .sign[data-reveal]{
+  transform:translateY(24px) rotate(-1.1deg);
+}
+html.js .sign[data-reveal].is-in{
+  transform:translateY(0) rotate(-1.1deg);
+}
+
+@media (prefers-reduced-motion:reduce){
+  html.js [data-reveal]{
+    opacity:1;
+    transform:none;
+    transition:none;
+  }
+  html.js .sign[data-reveal]{
+    transform:rotate(-1.1deg);
+  }
+  html.js [data-reveal="media"],
+  html.js [data-reveal="h1"]{
+    transform:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===================== SVG SPRITE ===================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+
+    <!-- FOX HEAD — the brand mark.
+         Front-facing, symmetric. Two pointed ears separated by a valley,
+         cheeks flaring wide below the ears, muzzle narrowing to a single
+         point at the bottom. Solid silhouette so it renders identically
+         at 16px (favicon) and 200px (curtain).
+         Path, clockwise from the valley between the ears:
+           valley       (50, 26)
+           right tip    (86,  6)
+           right cheek  (94, 54)
+           right jaw    (68, 80)
+           snout        (50, 94)
+           left jaw     (32, 80)
+           left cheek   ( 6, 54)
+           left tip     (14,  6)
+           close → valley -->
+    <symbol id="i-fox" viewBox="0 0 100 100">
+      <path d="M 50 26
+               L 86 6
+               L 94 54
+               Q 90 72 68 80
+               L 50 94
+               L 32 80
+               Q 10 72 6 54
+               L 14 6
+               Z"/>
+    </symbol>
+
+    <!-- Rising sun arc — decorative, hero placeholder only -->
+    <symbol id="i-sun" viewBox="0 0 128 128">
+      <path d="M 6 104 a 58 58 0 0 1 116 0 Z"/>
+    </symbol>
+
+    <!-- Person — Teri photo placeholder -->
+    <symbol id="i-person" viewBox="0 0 96 96">
+      <circle cx="48" cy="34" r="15" fill="none" stroke="currentColor" stroke-width="3"/>
+      <path d="M20 82c0-16 12-26 28-26s28 10 28 26" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- UI icons -->
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path fill="currentColor" d="M12 18a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 12 18Zm0-5a6 6 0 0 0-4.24 1.76l1.42 1.42a4 4 0 0 1 5.64 0l1.42-1.42A6 6 0 0 0 12 13Zm0-4A10 10 0 0 0 4.93 6.05L6.35 7.47a8 8 0 0 1 11.3 0l1.42-1.42A10 10 0 0 0 12 9Z"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path fill="currentColor" d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11a2 2 0 0 1 2 2v5h-2v-2H5v2H3v-5a2 2 0 0 1 2-2Zm2.1 0h9.8l-1-3H8.1Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ===================== THE CURTAIN ===================== -->
+<div id="curtain" aria-hidden="true">
+  <div class="curtain__band curtain__band--1"></div>
+  <div class="curtain__band curtain__band--2"></div>
+  <div class="curtain__band curtain__band--3">
+    <div class="curtain__name">
+      <svg class="curtain__mark" viewBox="0 0 100 100" aria-hidden="true">
+        <use href="#i-fox" fill="#FDFAF5"></use>
+      </svg>
+      <span class="curtain__title">Coyote Café</span>
+      <span class="curtain__sub">California City · Since 2008</span>
+    </div>
+  </div>
+  <div class="curtain__band curtain__band--4"></div>
+  <div class="curtain__band curtain__band--5"></div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#top" aria-label="Coyote Café — home">
+      <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+        <use href="#i-fox" fill="var(--espresso)"></use>
+      </svg>
+      <span class="brand__text">
+        <span class="brand__name">Coyote Café</span>
+        <span class="brand__sub">California City</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#hours">Hours &amp; Location</a>
+    </nav>
+
+    <a class="btn btn--primary header-cta" href="tel:+17603734115">
+      <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+      (760) 373-4115
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== 1. HERO ===================== -->
+<section class="hero" id="top">
+  <div class="wrap hero__inner">
+
+    <div class="hero__copy" data-reveal-group data-stagger="100">
+
+      <div class="sign" id="status-badge" role="status" data-state="loading" data-reveal>
+        <div class="sign__panel">
+          <p class="sign__state">
+            <span class="sign__dot" aria-hidden="true"></span>
+            <span id="status-state">Open daily</span>
+          </p>
+          <p class="sign__meta" id="status-text">7:00 AM – 2:00 PM</p>
+        </div>
+      </div>
+
+      <h1 data-reveal="h1">Where the desert stops for breakfast.</h1>
+      <p class="hero__sub" data-reveal>
+        Family-recipe comfort food in California City. Biscuits made from scratch,
+        grandma's secret salsa, and portions that respect your appetite — since 2008.
+      </p>
+
+      <div class="hero__actions" data-reveal>
+        <a class="btn btn--primary" href="tel:+17603734115">
+          <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+          Call to Order
+        </a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=7035+California+City+Blvd+Ste+B,+California+City,+CA+93505" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+          Get Directions
+        </a>
+      </div>
+
+      <p class="hero__trust" data-reveal>4.5★ on Yelp · 106 reviews · family-run since 2008</p>
+    </div>
+
+    <div class="hero__media" data-reveal-group>
+      <div class="ph ph--sunrise" data-reveal="media" data-photo="hero">
+        <span class="ph__chip" aria-hidden="true">Photo slot · hero · biscuits &amp; gravy · 4:3</span>
+        <svg class="ph__icon" viewBox="0 0 100 100" aria-hidden="true">
+          <use href="#i-fox" fill="var(--espresso)"></use>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="horizon" aria-hidden="true">
+  <svg viewBox="0 0 1440 32" preserveAspectRatio="none">
+    <path fill="currentColor" d="M0 18 C 240 14, 480 22, 720 17 S 1200 20, 1440 16 L 1440 32 L 0 32 Z"/>
+  </svg>
+</div>
+
+<!-- ===================== 2. STORY ===================== -->
+<section class="section story" id="story">
+  <div class="wrap story__grid" data-reveal-group>
+
+    <div class="story__portrait">
+      <div class="ph" data-reveal data-photo="teri">
+        <span class="ph__chip" aria-hidden="true">Photo slot · Teri in the kitchen · 4:5</span>
+        <svg class="ph__icon" aria-hidden="true"><use href="#i-person"></use></svg>
+      </div>
+    </div>
+
+    <div class="story__copy">
+      <h2 data-reveal>Made from scratch. Served with a story.</h2>
+
+      <div data-reveal style="margin-top:1.25rem">
+        <p>
+          Teri Peralta learned to cook at her grandmother's side. By 1993 she was serving
+          food at Cattleman's and driving school buses before sunrise.
+        </p>
+        <p>
+          In 2008 she opened Coyote Café with her grandmother's salsa recipe and a simple
+          idea: honest food, generous portions, and a welcome that feels like family.
+        </p>
+        <p><strong>The recipe is still secret. The welcome never changed.</strong></p>
+      </div>
+
+      <ul class="timeline" data-reveal>
+        <li><span class="yr">1993</span><span class="txt">Teri starts in restaurants — and behind the wheel of a school bus.</span></li>
+        <li><span class="yr">2008</span><span class="txt">Coyote Café opens on California City Blvd.</span></li>
+        <li><span class="yr">Today</span><span class="txt">Same salsa. Same cook. Same small-town welcome.</span></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== 3. MENU ===================== -->
+<section class="section" id="menu">
+  <div class="wrap" data-reveal-group>
+
+    <div class="section-head" data-reveal>
+      <h2>What people drive here for.</h2>
+      <p class="section-intro">
+        Breakfast and lunch, made fresh to order. A few favorites below — the full menu
+        is longer than this page.
+      </p>
+    </div>
+
+    <!-- ⚠️ PLACEHOLDER PRICES — confirm against the physical menu at the discovery visit. -->
+    <ul class="menu-list" data-reveal>
+      <li class="menu-item menu-item--star">
+        <span class="menu-item__name">Biscuits &amp; Gravy</span>
+        <span class="menu-item__price">$9.50</span>
+        <span class="menu-item__desc">Scratch-made. The dish people drive here for.</span>
+      </li>
+      <li class="menu-item">
+        <span class="menu-item__name">Country Fried Steak &amp; Eggs</span>
+        <span class="menu-item__price">$15.95</span>
+        <span class="menu-item__desc">Hand-breaded, smothered in gravy. Two eggs.</span>
+      </li>
+      <li class="menu-item">
+        <span class="menu-item__name">Chorizo Breakfast Burrito</span>
+        <span class="menu-item__price">$11.95</span>
+        <span class="menu-item__desc">House chorizo, eggs, potatoes, salsa. Wrapped warm.</span>
+      </li>
+      <li class="menu-item">
+        <span class="menu-item__name">Denver Omelette</span>
+        <span class="menu-item__price">$12.95</span>
+        <span class="menu-item__desc">Ham, peppers, onion, cheddar. Three eggs.</span>
+      </li>
+      <li class="menu-item menu-item--star">
+        <span class="menu-item__name">The California Coyote</span>
+        <span class="menu-item__price">$13.50</span>
+        <span class="menu-item__desc">Roast beef, swiss, green chili. Our namesake.</span>
+      </li>
+      <li class="menu-item">
+        <span class="menu-item__name">Tuna Melt</span>
+        <span class="menu-item__price">$11.50</span>
+        <span class="menu-item__desc">Griddled rye, sharp cheddar, honest tuna salad.</span>
+      </li>
+      <li class="menu-item">
+        <span class="menu-item__name">Buttermilk Pancakes &amp; French Toast</span>
+        <span class="menu-item__price">from $8.95</span>
+        <span class="menu-item__desc">Thick-cut, griddled golden. Real butter, real syrup.</span>
+      </li>
+      <li class="menu-item">
+        <span class="menu-item__name">Grandma's Salsa &amp; Chips</span>
+        <span class="menu-item__price">$5.95</span>
+        <span class="menu-item__desc">The recipe that started it all. Still secret.</span>
+      </li>
+    </ul>
+
+    <div class="menu__footer" data-reveal>
+      <p class="menu__note">Or just <a href="tel:+17603734115">call</a> — we'll tell you what's on today.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== 4. REVIEW WALL ===================== -->
+<section class="section reviews" id="reviews">
+  <div class="wrap" data-reveal-group>
+
+    <div class="reviews__head" data-reveal>
+      <h2>Don't take our word for it.</h2>
+      <p class="section-intro">Let the customers talk.</p>
+    </div>
+
+    <div class="review-grid">
+      <figure class="review review--featured" data-reveal>
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="review__quote">Best biscuits and gravy. Everything made fresh in house.</blockquote>
+        <figcaption class="review__attr">— Yelp review</figcaption>
+      </figure>
+
+      <figure class="review" data-reveal>
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="review__quote">Worth detouring heading north. The reviews are true.</blockquote>
+        <figcaption class="review__attr">— Yelp review</figcaption>
+      </figure>
+
+      <figure class="review" data-reveal>
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="review__quote">The employees become part of the family.</blockquote>
+        <figcaption class="review__attr">— Yelp review</figcaption>
+      </figure>
+
+      <figure class="review" data-reveal>
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="review__quote">Small-town vibes with big-flavor kicks.</blockquote>
+        <figcaption class="review__attr">— Yelp review</figcaption>
+      </figure>
+    </div>
+
+    <div class="rating-summary" data-reveal>
+      <div class="rating">
+        <span class="rating__num">4.5★</span>
+        <span class="rating__label">Yelp · 106 reviews</span>
+      </div>
+      <div class="rating">
+        <span class="rating__num">260+</span>
+        <span class="rating__label">reviews across the web</span>
+      </div>
+      <div class="rating">
+        <span class="rating__num">2008</span>
+        <span class="rating__label">family-run since</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== 5. HOURS & LOCATION ===================== -->
+<section class="section hours" id="hours">
+  <div class="wrap hours__grid" data-reveal-group>
+
+    <div>
+      <h2 data-reveal>Hours &amp; Location</h2>
+
+      <!-- ============================================================
+           ⚠️ BLOCKING ITEM — confirm with Teri before launch.
+           This table is the SINGLE SOURCE OF TRUTH for the OPEN sign in
+           the hero. If you edit hours here, you MUST also update the
+           JSON-LD block at the bottom. Those are the only two places
+           hours exist in the codebase.
+           data-day: 0=Sun … 6=Sat  |  times in 24h HH:MM.
+           ============================================================ -->
+      <table class="hours-table" data-reveal>
+        <caption class="visually-hidden">Weekly opening hours</caption>
+        <tbody>
+          <tr data-hours-row data-day="1" data-open="07:00" data-close="14:00"><th scope="row">Monday</th><td>7:00 AM – 2:00 PM</td></tr>
+          <tr data-hours-row data-day="2" data-open="07:00" data-close="14:00"><th scope="row">Tuesday</th><td>7:00 AM – 2:00 PM</td></tr>
+          <tr data-hours-row data-day="3" data-open="07:00" data-close="14:00"><th scope="row">Wednesday</th><td>7:00 AM – 2:00 PM</td></tr>
+          <tr data-hours-row data-day="4" data-open="07:00" data-close="14:00"><th scope="row">Thursday</th><td>7:00 AM – 2:00 PM</td></tr>
+          <tr data-hours-row data-day="5" data-open="07:00" data-close="14:00"><th scope="row">Friday</th><td>7:00 AM – 2:00 PM</td></tr>
+          <tr data-hours-row data-day="6" data-open="07:00" data-close="14:00"><th scope="row">Saturday</th><td>7:00 AM – 2:00 PM</td></tr>
+          <tr data-hours-row data-day="0" data-open="07:00" data-close="14:00"><th scope="row">Sunday</th><td>7:00 AM – 2:00 PM</td></tr>
+        </tbody>
+      </table>
+
+      <ul class="contact-list" data-reveal>
+        <li>
+          <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+          <address style="font-style:normal">
+            7035 California City Blvd, Ste B<br>California City, CA 93505
+          </address>
+        </li>
+        <li>
+          <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+          <a href="tel:+17603734115">(760) 373-4115</a>
+        </li>
+        <li>
+          <svg aria-hidden="true"><use href="#i-car"></use></svg>
+          <span>Free private lot parking</span>
+        </li>
+        <li>
+          <svg aria-hidden="true"><use href="#i-wifi"></use></svg>
+          <span>Free WiFi · Takeout · Wheelchair accessible · Outdoor seating</span>
+        </li>
+      </ul>
+
+      <div class="hours__actions" data-reveal>
+        <a class="btn btn--primary" href="tel:+17603734115">
+          <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+          Call to Order
+        </a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=7035+California+City+Blvd+Ste+B,+California+City,+CA+93505" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+          Get Directions
+        </a>
+      </div>
+    </div>
+
+    <!-- Map iframe: never animated (cross-origin reflow) -->
+    <div class="map-embed" data-reveal>
+      <iframe
+        title="Map to Coyote Café, 7035 California City Blvd, California City, CA"
+        src="https://www.google.com/maps?q=7035+California+City+Blvd+Ste+B,+California+City,+CA+93505&amp;output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== 6. CTA BAND ===================== -->
+<section class="cta-band" id="visit">
+  <div class="wrap" data-reveal-group>
+    <div data-reveal>
+      <h2>Come hungry. Leave family.</h2>
+      <p id="cta-hours-line">Open today until 2:00 PM.</p>
+    </div>
+    <div class="cta-band__actions" data-reveal>
+      <a class="btn btn--onDark" href="tel:+17603734115">
+        <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+        (760) 373-4115
+      </a>
+      <a class="btn btn--outlineLight" href="https://www.google.com/maps/dir/?api=1&amp;destination=7035+California+City+Blvd+Ste+B,+California+City,+CA+93505" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+        Directions
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== 7. FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div>
+      <div class="footer__brand">
+        <svg viewBox="0 0 100 100" style="width:44px;height:44px" aria-hidden="true">
+          <use href="#i-fox" fill="var(--cream)"></use>
+        </svg>
+        <span class="name">Coyote Café</span>
+      </div>
+      <p style="max-width:32ch">Made fresh in California City, CA. Family-run since 2008.</p>
+    </div>
+
+    <div>
+      <h3>Visit</h3>
+      <address>
+        Coyote Café<br>
+        7035 California City Blvd, Ste B<br>
+        California City, CA 93505<br>
+        <a href="tel:+17603734115">(760) 373-4115</a>
+      </address>
+    </div>
+
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#hours">Hours &amp; Location</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap footer__bottom">
+    <span>© <span id="year">2026</span> Coyote Café. All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- ===================== STICKY MOBILE ACTION BAR ===================== -->
+<div class="action-bar" id="action-bar" data-visible="false">
+  <a class="btn btn--primary" href="tel:+17603734115">
+    <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+    Call
+  </a>
+  <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=7035+California+City+Blvd+Ste+B,+California+City,+CA+93505" target="_blank" rel="noopener">
+    <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+    Directions
+  </a>
+</div>
+
+<!-- JSON-LD: image + og:image are placeholder paths.
+     ⚠️ openingHoursSpecification MUST stay in sync with the hours table above. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Coyote Café",
+  "description": "Family-recipe breakfast and lunch in California City, CA. Made from scratch since 2008.",
+  "url": "https://coyotecafecalcity.com/",
+  "telephone": "+1-760-373-4115",
+  "priceRange": "$",
+  "servesCuisine": ["American", "Breakfast", "Diner"],
+  "image": ["https://coyotecafecalcity.com/img/og.jpg"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7035 California City Blvd, Ste B",
+    "addressLocality": "California City",
+    "addressRegion": "CA",
+    "postalCode": "93505",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.1258,
+    "longitude": -117.9859
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "07:00",
+    "closes": "14:00"
+  }],
+  "acceptsReservations": false,
+  "hasMenu": "https://coyotecafecalcity.com/#menu"
+}
+</script>
+
+<!-- ===================== BEHAVIOUR ===================== -->
+<script>
+(function () {
+  'use strict';
+
+  var html = document.documentElement;
+  var prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ==================================================================
+     OPEN / CLOSED SIGN
+     ================================================================== */
+  var TZ = 'America/Los_Angeles';
+  var DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+  var badge = document.getElementById('status-badge');
+  var stateEl = document.getElementById('status-state');
+  var metaEl = document.getElementById('status-text');
+  var ctaLine = document.getElementById('cta-hours-line');
+  var rows = Array.prototype.slice.call(document.querySelectorAll('[data-hours-row]'));
+
+  function toMinutes(hhmm) {
+    var p = hhmm.split(':');
+    return parseInt(p[0], 10) * 60 + parseInt(p[1], 10);
+  }
+  function toLabel(hhmm) {
+    var p = hhmm.split(':');
+    var h = parseInt(p[0], 10), m = parseInt(p[1], 10);
+    var ap = h >= 12 ? 'PM' : 'AM';
+    var hh = h % 12 === 0 ? 12 : h % 12;
+    return hh + ':' + (m < 10 ? '0' + m : m) + ' ' + ap;
+  }
+
+  var schedule = {};
+  rows.forEach(function (r) {
+    var d = parseInt(r.dataset.day, 10);
+    if (!schedule[d]) schedule[d] = [];
+    schedule[d].push([toMinutes(r.dataset.open), toMinutes(r.dataset.close)]);
+    if (r.dataset.open2 && r.dataset.close2) {
+      schedule[d].push([toMinutes(r.dataset.open2), toMinutes(r.dataset.close2)]);
+    }
+  });
+
+  function restaurantNow() {
+    var parts = new Intl.DateTimeFormat('en-US', {
+      timeZone: TZ, weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+    }).formatToParts(new Date());
+    var map = {};
+    parts.forEach(function (p) { map[p.type] = p.value; });
+    return {
+      day: DAY_NAMES.indexOf(map.weekday),
+      mins: parseInt(map.hour, 10) * 60 + parseInt(map.minute, 10)
+    };
+  }
+
+  function rowFor(d) {
+    return rows.filter(function (x) { return parseInt(x.dataset.day, 10) === d; })[0];
+  }
+  function labelForOpen(d, mins) {
+    var r = rowFor(d);
+    if (!r) return '';
+    if (r.dataset.open2 && toMinutes(r.dataset.open2) === mins) return toLabel(r.dataset.open2);
+    return toLabel(r.dataset.open);
+  }
+  function labelForClose(d, mins) {
+    var r = rowFor(d);
+    if (!r) return '';
+    if (r.dataset.close2 && toMinutes(r.dataset.close2) === mins) return toLabel(r.dataset.close2);
+    return toLabel(r.dataset.close);
+  }
+  function fullDayName(i) {
+    return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][i];
+  }
+  function setStatus(state, stateLabel, metaLabel) {
+    if (!badge) return;
+    badge.setAttribute('data-state', state);
+    if (stateEl) stateEl.textContent = stateLabel;
+    if (metaEl) metaEl.textContent = metaLabel;
+  }
+
+  function evaluateSign() {
+    if (!rows.length || !badge) return;
+    var now = restaurantNow();
+    if (now.day < 0) return;
+
+    rows.forEach(function (r) {
+      if (parseInt(r.dataset.day, 10) === now.day) r.setAttribute('data-today', '');
+      else r.removeAttribute('data-today');
+    });
+
+    var today = schedule[now.day] || [];
+    var i, range;
+
+    for (i = 0; i < today.length; i++) {
+      range = today[i];
+      if (now.mins >= range[0] && now.mins < range[1]) {
+        var closeLabel = labelForClose(now.day, range[1]);
+        setStatus('open', 'Open now', 'Closes ' + closeLabel);
+        if (ctaLine) ctaLine.textContent = 'Open today until ' + closeLabel + '.';
+        return;
+      }
+    }
+
+    for (i = 0; i < today.length; i++) {
+      if (now.mins < today[i][0]) {
+        var openLabel = labelForOpen(now.day, today[i][0]);
+        setStatus('closed', 'Closed', 'Opens today at ' + openLabel);
+        if (ctaLine) ctaLine.textContent = 'Opens today at ' + openLabel + '.';
+        return;
+      }
+    }
+
+    for (var step = 1; step <= 7; step++) {
+      var d = (now.day + step) % 7;
+      var next = schedule[d];
+      if (next && next.length) {
+        var label = labelForOpen(d, next[0][0]);
+        var when = step === 1 ? 'tomorrow' : 'on ' + fullDayName(d);
+        setStatus('closed', 'Closed', 'Opens ' + when + ' at ' + label);
+        if (ctaLine) ctaLine.textContent = 'Opens ' + when + ' at ' + label + '.';
+        return;
+      }
+    }
+
+    setStatus('closed', 'Closed', 'See hours below');
+  }
+
+  /* ==================================================================
+     THE CURTAIN
+     ================================================================== */
+  function releaseScrollLock() {
+    html.classList.remove('is-loading');
+  }
+
+  function unmountCurtain() {
+    var c = document.getElementById('curtain');
+    if (c) c.classList.add('curtain--gone');
+    releaseScrollLock();
+  }
+
+  function runCurtain(then) {
+    if (!html.classList.contains('is-loading')) { then(); return; }
+
+    var curtain = document.getElementById('curtain');
+    if (!curtain) { releaseScrollLock(); then(); return; }
+
+    if (prefersReduced) {
+      setTimeout(function () {
+        curtain.classList.add('curtain--reduced');
+        setTimeout(function () { unmountCurtain(); then(); }, 220);
+      }, 200);
+      return;
+    }
+
+    setTimeout(function () { curtain.classList.add('curtain--name-out');   },  820);
+    setTimeout(function () { curtain.classList.add('curtain--band-3-out'); }, 1000);
+    setTimeout(function () { curtain.classList.add('curtain--outer-a-out');}, 1060);
+    setTimeout(function () { curtain.classList.add('curtain--outer-b-out');}, 1120);
+    setTimeout(function () { unmountCurtain(); then(); }, 1770);
+  }
+
+  /* ==================================================================
+     REVEAL
+     ================================================================== */
+  function initReveal() {
+    var groups = document.querySelectorAll('[data-reveal-group]');
+    if (!groups.length) return;
+
+    if (prefersReduced || !('IntersectionObserver' in window)) {
+      document.querySelectorAll('[data-reveal]').forEach(function (el) {
+        el.classList.add('is-in');
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var group = entry.target;
+        var items = group.querySelectorAll('[data-reveal]');
+        var stagger = parseInt(group.getAttribute('data-stagger'), 10) || 70;
+        var maxDelay = 560;
+
+        items.forEach(function (item, i) {
+          var delay = Math.min(i * stagger, maxDelay);
+          item.style.willChange = 'transform, opacity';
+          item.style.transitionDelay = delay + 'ms';
+          void item.offsetWidth;
+          item.classList.add('is-in');
+
+          var cleaned = false;
+          var cleanup = function () {
+            if (cleaned) return;
+            cleaned = true;
+            item.style.transitionDelay = '';
+            item.style.willChange = '';
+            item.removeEventListener('transitionend', cleanup);
+          };
+          item.addEventListener('transitionend', cleanup);
+          setTimeout(cleanup, delay + 1000);
+        });
+
+        obs.unobserve(group);
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+
+    groups.forEach(function (g) { observer.observe(g); });
+  }
+
+  /* ==================================================================
+     STICKY MOBILE ACTION BAR
+     ================================================================== */
+  function initActionBar() {
+    var bar = document.getElementById('action-bar');
+    var hero = document.querySelector('.hero');
+    if (!bar || !hero) return;
+
+    if (!('IntersectionObserver' in window)) {
+      bar.setAttribute('data-visible', 'true');
+      return;
+    }
+
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        bar.setAttribute('data-visible', e.isIntersecting ? 'false' : 'true');
+      });
+    }, { rootMargin: '-120px 0px 0px 0px' });
+
+    obs.observe(hero);
+  }
+
+  /* ==================================================================
+     BOOT
+     ================================================================== */
+  function boot() {
+    evaluateSign();
+    setInterval(evaluateSign, 60000);
+
+    runCurtain(function () {
+      setTimeout(function () {
+        initReveal();
+        initActionBar();
+      }, 50);
+    });
+
+    var yr = document.getElementById('year');
+    if (yr) yr.textContent = new Date().getFullYear();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+
+})();
+</script>
+
+</body>
+</html>
